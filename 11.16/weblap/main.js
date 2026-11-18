@@ -1,4 +1,5 @@
 let userPoint = 0;
+let osszPont = 0;
 let computerPoint = 0;
 
 function jatek(playerChoice) {
@@ -25,23 +26,30 @@ function jatek(playerChoice) {
 
     console.log(computerChoice)
 
-    if ((playerChoice == "ko" && computerChoice == "papir")
-        || (playerChoice == "papir" && computerChoice == "ollo")
-        || (playerChoice == "ollo" && computerChoice == "ko")) {
+    if ((playerChoice == "ko" && computerChoice == "papir") || (playerChoice == "papir" && computerChoice == "ollo") || (playerChoice == "ollo" && computerChoice == "ko")) {
         computerPoint++;
+        osszPont++;
+        if(osszPont == 10){
+            
+        }
         console.log("comp:" + computerPoint);
         document.getElementById("eredmenyKiir").innerHTML = "A gép nyert. haha";
         document.getElementById("gepPontja").innerHTML = computerPoint;
     }
-    else if ((playerChoice == "ko" && computerChoice == "ollo")
-        || (playerChoice == "papir" && computerChoice == "ko")
-        || (playerChoice == "ollo" && computerChoice == "papir")) {
+    else if ((playerChoice == "ko" && computerChoice == "ollo") || (playerChoice == "papir" && computerChoice == "ko") || (playerChoice == "ollo" && computerChoice == "papir")) {
         userPoint++;
+        osszPont++; 
+        if(osszPont == 10){
+            
+        }
         console.log("user:" + userPoint)
         document.getElementById("eredmenyKiir").innerHTML = "Te nyertél!"
         document.getElementById("tePontod").innerHTML = userPoint;
     }
     else {
+        if(osszPont == 10){
+            
+        }
         console.log("döntetlen......")
         document.getElementById("eredmenyKiir").innerHTML = "Döntetlen...."
     }
