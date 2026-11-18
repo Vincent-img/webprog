@@ -1,28 +1,39 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kő-papír-olló</title>
+    <title>Kő - Papír - Olló</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="kontener">
-        <h1>Kő-Papír-Olló</h1>
+        <h1>Kő - Papír - Olló</h1>
         <h2>Válassz!</h2>
+
         <div class="kepek">
-            <img onclick=" jatek('ko') " src="img/ko.png" alt="" id="jelolt">
-            <img onclick=" jatek('papir') "src="img/papir.png" alt="">
-            <img onclick=" jatek('ollo') "src="img/ollo.png" alt="">
+            <img src="img/ko.png" id="koImg" alt="kep a kőről" class="kivalasztva" onclick="jatek('ko')">
+            <img src="img/papir.png" id="papirImg" alt="kep a papírról" class="kivalasztva" onclick="jatek('papir')">
+            <img src="img/ollo.png" id="olloImg" alt="kep az ollóról" class="kivalasztva" onclick="jatek('ollo')">
         </div>
+
         <h2>Gép választása</h2>
-        <img id="er" src="img/ollo.png" alt="">
-        <h1 id="">Eredmény: Te nyertél!</h1>
-        <p>Te pontod</p>
-        <p class="pont">2</p>
-        <p>Gép pontja</p>
-        <p class="pont">8</p>
+
+        <div >
+            <img id="eredmenykep" src="" alt="">
+        </div>
+
+
+        <h1>Eredmény:</h1> 
+        <p id="eredmenyKiir"></p>
+        
+        <h3>Te pontod</h3>
+        <p id="tePontod">0</p>
+
+        <h3>Gép pontja</h3>
+        <p id="gepPontja">0</p>
     </div>
+
     <script src="main.js"></script>
 </body>
 </html>
