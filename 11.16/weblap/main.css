@@ -25,3 +25,15 @@ p {
     color: red;
     text-shadow: 2px 0px 5px rgba(255, 0, 0, 0.753);
 }
+button{
+    margin: 20px;
+    background-color: white;
+    border: 3px solid #12a62a;
+    color: #12a62a;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 10px #12a62b78;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: larger;
+}
