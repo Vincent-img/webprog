@@ -21,7 +21,7 @@ img {
     border: 0px solid red;
 }
 
-p {
+#eredmenyKiir{
     color: red;
     text-shadow: 2px 0px 5px rgba(255, 0, 0, 0.753);
 }
@@ -36,4 +36,46 @@ button{
     border-radius: 15px;
     font-weight: bold;
     font-size: larger;
+    text-align: center;
+    margin-bottom: 10px;
+   
+}
+#reg{
+    margin: 20px;
+    background-color: white;
+    border: 3px solid #12a62a;
+    color: #12a62a;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 10px #12a62b78;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0px;
+  
+}
+.gombok{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    
+}
+#login{
+    display:flex;
+}
+input{
+    max-height: 15px;
+    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.egeszlogin{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
 }

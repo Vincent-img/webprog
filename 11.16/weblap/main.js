@@ -2,17 +2,30 @@ let userPoint = 0;
 let osszPont = 0;
 let computerPoint = 0;
 let gameOver = false;
-document.getElementById("gomb").onclick = function(){engedKepek}
+
 function letiltKepek() {
     gameOver = true;
     document.querySelectorAll(".kepek img").forEach(kep => {
         kep.style.pointerEvents = "none";
         kep.style.opacity = "1";
     });
-    
 }
-function engedKepek(){
-         letiltKepek.gameOver = false
+function engedKepek() {
+    userPoint = 0;
+    osszPont = 0;
+    computerPoint = 0;
+    gameOver = false;
+
+    document.getElementById("tePontod").innerHTML = userPoint;
+    document.getElementById("gepPontja").innerHTML = computerPoint;
+    document.getElementById("eredmenyKiir").innerHTML = "";
+    document.getElementById("vegeredmeny").innerHTML = "";
+    document.getElementById("eredmenykep").removeAttribute("src");
+
+    document.querySelectorAll(".kepek img").forEach(kep => {
+        kep.style.pointerEvents = "auto";
+        kep.style.borderWidth = "0px";
+    });
 }
 
 function jatek(playerChoice) {
@@ -69,4 +82,12 @@ function jatek(playerChoice) {
         console.log("döntetlen......")
         document.getElementById("eredmenyKiir").innerHTML = "Döntetlen...."
     }
+}
+let email = getElementById("email");
+let jelszo1 = getElementById("jelszo");
+let jelszo2 = getElementById("jleszoMegint");
+
+
+function bejelentkezes(){
+    
 }
