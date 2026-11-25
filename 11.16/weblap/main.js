@@ -83,11 +83,48 @@ function jatek(playerChoice) {
         document.getElementById("eredmenyKiir").innerHTML = "Döntetlen...."
     }
 }
-let email = getElementById("email");
-let jelszo1 = getElementById("jelszo");
-let jelszo2 = getElementById("jleszoMegint");
+let email = document.getElementById("email").value;
+let felhNev = document.getElementById("felhasznalonev").value;
 
 
 function bejelentkezes(){
+    let email = document.getElementById("email").value;
+    let felhNev = document.getElementById("felhasznalonev").value;  
+    let emailhossz = email.lenght;
+    let felhnevhossz = felhNev.lenght;
+    let vankukac = false;
+    let vanpont = false;
+    let joahosszfelhnev = false;
+    let joahosszemail = false;
+
+    console.log(email);
+    console.log(felhNev);
+    
+    // email ellenőrzés
+
+    if(email.includes("@")){
+        vankukac = true;
+        
+    }
+    if(email.includes(".")){
+        vanpont = true;
+    }
+    if(emailhossz >= 10 || emailhossz < 50 ){
+        joahosszemail = true;
+    }
+
+
+
+
+    console.log("@")
+    console.log(vankukac)
+    console.log(".")
+    console.log(vanpont)
+    console.log("jo a nev")
+    console.log(joahosszfelhnev)
+    console.log("jo az email")
+    console.log(joahosszemail)
+    console.log("@")
+    console.log()
     
 }
