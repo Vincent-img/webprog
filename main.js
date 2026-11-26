@@ -109,7 +109,7 @@ function bejelentkezes(){
     if(email.includes(".")){
         vanpont = true;
     }
-    if(emailhossz >= 10 || emailhossz < 50 ){
+    if(emailhossz > 10 || emailhossz > 50 ){
         joahosszemail = true;
     }
 
