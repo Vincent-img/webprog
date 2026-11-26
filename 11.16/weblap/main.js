@@ -124,7 +124,6 @@ function bejelentkezes(){
     console.log(joahosszfelhnev)
     console.log("jo az email")
     console.log(joahosszemail)
-    console.log("@")
-    console.log()
+    
     
 }
